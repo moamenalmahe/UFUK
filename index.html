@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFUK | Digital Growth Studio</title>
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="icon.jpeg">
+  <link rel="shortcut icon" href="logo.jpeg">
+  <link rel="apple-touch-icon" href="logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="page-wrap">
+    <header class="nav">
+      <div class="brand">
+        <img src="logo.jpeg" alt="UFUK logo">
+        <div class="brand-text">
+          <span class="brand-name">UFUK <span class="logo-chip" aria-hidden="true"></span></span>
+          <span class="brand-sub">ESTD 2023</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="pill">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Blue sky vision • Bold momentum</p>
+            <h1>We help businesses grow online with motion-rich experiences that convert.</h1>n, and engineering into a single motion—crafting products that feel alive, adaptive, and unmistakably premium.</p>
+          <div class="hero-actions">
+            <a class="pill primary" href="contact.html">Get Free Consultation</a>
+            <a class="pill ghost" href="portfolio.html">See our work</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number" data-count="68">0</span>
+              <span class="stat-label">Projects launched</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="24">0</span>
+              <span class="stat-label">Countries reached</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="4.9">0</span>
+              <span class="stat-label">Client rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbital">
+            <div class="glow-ring"></div>
+            <img src="logo.jpeg" alt="UFUK Sphere">
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+          </div>
+          <div class="floating-cards">
+            <div class="card pulse">
+              <p>AI & Data Platforms</p>
+              <span>Predictive, secure, scalable.</span>
+            </div>
+            <div class="card slide">
+              <p>Immersive Web</p>
+              <span>Motion-first storytelling that converts.</span>
+            </div>
+            <div class="card rise">
+              <p>Launch Sprints</p>
+              <span>From zero to live in weeks, not months.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section grid-section">
+        <div class="section-header">
+          <p class="eyebrow">Capabilities</p>
+          <h2>What we deliver</h2>
+          <p class="lede">A full-stack growth team under one roof. Each service is packaged with clear outcomes and optional starter pricing.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="card-top">
+              <span class="tag">Paid Ads</span>
+              <span class="price">from $1.2k/mo</span>
+            </div>
+            <h3>Google & Facebook Ads</h3>
+            <p>Full-funnel campaigns with rapid A/B tests, conversion tracking, and weekly optimization.</p>
+            <ul>
+              <li>Landing pages tuned for Quality Score</li>
+              <li>Retargeting journeys with dynamic creatives</li>
+              <li>ROI dashboards updated daily</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="card-top">
+              <span class="tag">SEO</span>
+              <span class="price">from $900/mo</span>
+            </div>
+            <h3>Search Engine Optimization</h3>
+            <p>Technical and content SEO to win rankings and keep them—built on clean architecture and fast pages.</p>
+            <ul>
+              <li>Site speed, Core Web Vitals, schema</li>
+              <li>Content sprints aligned to search intent</li>
+              <li>Authority building with white-hat links</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="card-top">
+              <span class="tag">Social</span>
+              <span class="price">from $750/mo</span>
+            </div>
+            <h3>Social Media Management</h3>
+            <p>Channel playbooks, content calendars, and thumb-stopping motion assets to grow community and reach.</p>
+            <ul>
+              <li>Platform-native creative and captions</li>
+              <li>Community moderation and reporting</li>
+              <li>Organic plus paid synergy for lift</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="card-top">
+              <span class="tag">Design</span>
+              <span class="price">project-based</span>
+            </div>
+            <h3>Website & Brand Design</h3>
+            <p>Bold visual identity, UX, and motion that make your brand instantly recognizable.</p>
+            <ul>
+              <li>Brand systems, logo refinements, guidelines</li>
+              <li>Responsive web design with animation</li>
+              <li>Design systems for scale</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="card-top">
+              <span class="tag">Content</span>
+              <span class="price">from $600/mo</span>
+            </div>
+            <h3>Content Creation</h3>
+            <p>Copy, images, and video engineered for engagement and search, aligned to your funnel.</p>
+            <ul>
+              <li>Blogs, ads, social, and product copy</li>
+              <li>Short-form video and motion graphics</li>
+              <li>Editorial calendars with keyword maps</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section portfolio">
+        <div class="section-header">
+          <p class="eyebrow">Case Studies</p>
+          <h2>Proof in motion</h2>
+          <p class="lede">Select projects with measurable lift. Live links and metrics that show the work working.</p>
+        </div>
+        <div class="portfolio-grid">
+          <article class="folio-card">
+            <div class="thumb gradient-blue"></div>
+            <div class="folio-body">
+              <h3>Fintech onboarding</h3>
+              <p>Reduced signup friction with animated guidance and trust cues.</p>
+              <div class="metrics">
+                <span>+42% conversions</span>
+                <span>-28% drop-off</span>
+              </div>
+              <a class="pill ghost" href="#">View live</a>
+            </div>
+          </article>
+          <article class="folio-card">
+            <div class="thumb gradient-orange"></div>
+            <div class="folio-body">
+              <h3>D2C launch</h3>
+              <p>Full brand, storefront, and paid acquisition playbook in six weeks.</p>
+              <div class="metrics">
+                <span>3.4x ROAS</span>
+                <span>+120% AOV</span>
+              </div>
+              <a class="pill ghost" href="#">Case study</a>
+            </div>
+          </article>
+          <article class="folio-card">
+            <div class="thumb gradient-gold"></div>
+            <div class="folio-body">
+              <h3>B2B demand gen</h3>
+              <p>SEO and content engine paired with targeted LinkedIn funnels.</p>
+              <div class="metrics">
+                <span>+310% organic traffic</span>
+                <span>+68% SQLs</span>
+              </div>
+              <a class="pill ghost" href="#">Read results</a>
+            </div>
+          </article>
+        </div>
+        <div class="testimonials">
+          <article class="quote-card">
+            <p>"UFUK rebuilt our funnel with motion that actually clarifies the product. We hit our quarterly target in five weeks."</p>
+            <div class="quote-meta">
+              <span class="name">Maya B.</span>
+              <span class="role">VP Growth, SaaS</span>
+            </div>
+          </article>
+          <article class="quote-card">
+            <p>"They pair creative with ruthless measurement. The team felt like an in-house squad from day one."</p>
+            <div class="quote-meta">
+              <span class="name">Luis P.</span>
+              <span class="role">Founder, D2C</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="insights" class="section marquee">
+        <div class="marquee-track" aria-hidden="true">
+          <span>Motion-first storytelling</span>
+          <span>Enterprise-ready engineering</span>
+          <span>Data-rich decisioning</span>
+          <span>Premium client experience</span>
+          <span>Launch in weeks</span>
+        </div>
+        <div class="marquee-track" aria-hidden="true">
+          <span>Motion-first storytelling</span>
+          <span>Enterprise-ready engineering</span>
+          <span>Data-rich decisioning</span>
+          <span>Premium client experience</span>
+          <span>Launch in weeks</span>
+        </div>
+      </section>
+
+      <section id="process" class="section steps">
+        <div class="section-header">
+          <p class="eyebrow">Approach</p>
+          <h2>How we move</h2>
+        </div>
+        <div class="step-list">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div>
+              <h3>Frame</h3>
+              <p>We align on the problem, define success, and chart a measurable path.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div>
+              <h3>Design</h3>
+              <p>Rapid prototyping with bold visuals and micro-interactions to prove the feel.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div>
+              <h3>Build</h3>
+              <p>Performance-focused engineering with resilience, security, and analytics baked in.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">04</div>
+            <div>
+              <h3>Launch & Learn</h3>
+              <p>Ship, measure, and iterate with momentum so results keep compounding.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-header">
+          <p class="eyebrow">About Us</p>
+          <h2>Founded in 2023 to fuse motion, measurement, and brand.</h2>
+          <p class="lede">We are a distributed team of designers, engineers, and growth strategists obsessed with measurable craft.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Vision & Values</h3>
+            <p>We believe the best experiences feel alive, are relentlessly measurable, and respect the user's time.</p>
+            <ul>
+              <li>Clarity over clutter</li>
+              <li>Momentum over perfection</li>
+              <li>Transparency in metrics</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>Certifications</h3>
+            <p>Proof of craft and compliance.</p>
+            <div class="badges">
+              <span class="badge">Google Partner</span>
+              <span class="badge">Meta Certified</span>
+              <span class="badge">HubSpot Certified</span>
+            </div>
+          </div>
+          <div class="about-card team">
+            <h3>Team</h3>
+            <div class="team-list">
+              <div class="member">
+                <div class="avatar">A</div>
+                <div>
+                  <strong>Ayse Demir</strong>
+                  <p>Founder & Creative Director</p>
+                </div>
+              </div>
+              <div class="member">
+                <div class="avatar">K</div>
+                <div>
+                  <strong>Kerem Yilmaz</strong>
+                  <p>Head of Growth</p>
+                </div>
+              </div>
+              <div class="member">
+                <div class="avatar">L</div>
+                <div>
+                  <strong>Lina Park</strong>
+                  <p>Lead Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta">
+        <div class="cta-box">
+          <div>
+            <p class="eyebrow">Let's make something fearless</p>
+            <h2>Ready to move?</h2>
+            <p class="lede">Tell us your boldest goal. We'll bring the motion, the craft, and the code.</p>
+          </div>
+          <form class="cta-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name">
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com">
+            </label>
+            <label>
+              Project goal
+              <textarea rows="3" placeholder="What do you want to build?"></textarea>
+            </label>
+            <button type="submit" class="pill primary">Send the spark</button>
+          </form>
+          <div class="contact-info">
+            <h3>Contact</h3>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> hello@ufuk.studio</p>
+            <p><strong>Office:</strong> 123 Innovation Way, Istanbul & Remote</p>
+            <div class="socials">
+              <a href="#">LinkedIn</a>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+              <a href="#">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq">
+        <div class="section-header">
+          <p class="eyebrow">FAQs</p>
+          <h2>Answers up front</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>How fast can we launch?</summary>
+            <p>We run two-week sprints. A focused landing experience with ads can launch in 3–4 weeks.</p>
+          </details>
+          <details>
+            <summary>Do you work as an extension of our team?</summary>
+            <p>Yes. We join your comms stack, share dashboards, and maintain weekly rituals.</p>
+          </details>
+          <details>
+            <summary>Can you handle copy, design, and dev together?</summary>
+            <p>That is our core model—strategy, content, design, and engineering under one roof.</p>
+          </details>
+          <details>
+            <summary>Do you support long-term retainers?</summary>
+            <p>Most clients stay 6–12 months for growth operations. We also take on project-based engagements.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="blog" class="section blog">
+        <div class="section-header">
+          <p class="eyebrow">Insights</p>
+          <h2>Latest articles</h2>
+        </div>
+        <div class="blog-grid">
+          <article class="tile">
+            <h3>Designing motion that boosts clarity, not clutter</h3>
+            <p>How to use animation to guide attention and reduce cognitive load.</p>
+            <span class="tag">UX Motion</span>
+          </article>
+          <article class="tile">
+            <h3>SEO sprints that stack with paid performance</h3>
+            <p>Why pairing intent-driven content with retargeting lifts ROAS.</p>
+            <span class="tag">SEO</span>
+          </article>
+          <article class="tile">
+            <h3>Analytics foundations for every launch</h3>
+            <p>Our go-to stack for tracking, privacy, and decision-ready dashboards.</p>
+            <span class="tag">Data</span>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="brand">
+        <img src="logo.jpeg" alt="UFUK logo small">
+        <div class="brand-text">
+          <span class="brand-name">UFUK <span class="logo-chip" aria-hidden="true"></span></span>
+          <span class="brand-sub">ESTD 2023</span>
+        </div>
+      </div>
+      <p>Premium digital product studio crafting motion-rich experiences worldwide.</p>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Blog</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

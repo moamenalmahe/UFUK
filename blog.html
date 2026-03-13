@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFUK | Blog</title>
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="logo.jpeg">
+  <link rel="shortcut icon" href="logo.jpeg">
+  <link rel="apple-touch-icon" href="logo.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="page-wrap">
+    <header class="nav">
+      <div class="brand">
+        <img src="logo.jpeg" alt="UFUK logo">
+        <div class="brand-text">
+          <span class="brand-name">UFUK <span class="logo-chip" aria-hidden="true"></span></span>
+          <span class="brand-sub">ESTD 2023</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="pill">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero slim-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Insights</p>
+          <h1><img class="inline-logo" src="logo.jpeg" alt="UFUK icon"> Ideas, playbooks, and experiments.</h1>
+          <p class="lede">Short, useful reads on growth, design, and engineering.</p>
+        </div>
+      </section>
+
+      <section class="section blog">
+        <div class="blog-grid">
+          <article class="tile">
+            <h3>Designing motion that boosts clarity, not clutter</h3>
+            <p>How to use animation to guide attention and reduce cognitive load.</p>
+            <span class="tag">UX Motion</span>
+          </article>
+          <article class="tile">
+            <h3>SEO sprints that stack with paid performance</h3>
+            <p>Why pairing intent-driven content with retargeting lifts ROAS.</p>
+            <span class="tag">SEO</span>
+          </article>
+          <article class="tile">
+            <h3>Analytics foundations for every launch</h3>
+            <p>Our go-to stack for tracking, privacy, and decision-ready dashboards.</p>
+            <span class="tag">Data</span>
+          </article>
+          <article class="tile">
+            <h3>Brand systems that scale</h3>
+            <p>Keeping velocity high while protecting consistency.</p>
+            <span class="tag">Design Systems</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta">
+        <div class="cta-box">
+          <div>
+            <p class="eyebrow">Let’s make something fearless</p>
+            <h2>Ready to move?</h2>
+            <p class="lede">Tell us your boldest goal. We'll bring the motion, the craft, and the code.</p>
+          </div>
+          <form class="cta-form">
+            <label>
+              Name
+              <input type="text" placeholder="Your name">
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com">
+            </label>
+            <label>
+              Project goal
+              <textarea rows="3" placeholder="What do you want to build?"></textarea>
+            </label>
+            <button type="submit" class="pill primary">Send the spark</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="brand">
+        <img src="logo.jpeg" alt="UFUK logo small">
+        <div class="brand-text">
+          <span class="brand-name">UFUK <span class="logo-chip" aria-hidden="true"></span></span>
+          <span class="brand-sub">ESTD 2023</span>
+        </div>
+      </div>
+      <p>Premium digital product studio crafting motion-rich experiences worldwide.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
