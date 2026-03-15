@@ -961,14 +961,7 @@ article.service-card {
 }
 
 .album-caption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin: 10px auto 0;
-  color: #c5d2e6;
-  max-width: 1180px;
-  padding: 0 4px;
+  display: none;
 }
 
 .album-caption p {
