@@ -1,3 +1,13 @@
+// Redirect /index.html to clean root on any page that includes this script
+(function() {
+  const path = window.location.pathname;
+  if (path.toLowerCase().endsWith('/index.html')) {
+    const cleanPath = path.replace(/index\.html$/i, '') || '/';
+    const target = cleanPath + window.location.search + window.location.hash;
+    window.location.replace(target);
+  }
+})();
+
 // Reveal elements on scroll
 const observer = new IntersectionObserver(
   entries => {

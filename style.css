@@ -713,11 +713,11 @@ h3 {
 }
 
 .stats {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--muted-border);
   border-radius: 24px;
   padding: 40px 26px;
-  box-shadow: 0 14px 50px rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow);
 }
 
 .stats-grid {
@@ -736,7 +736,7 @@ h3 {
 
 .stat p {
   margin: 0;
-  color: var(--muted);
+  color: #c3cedd;
   font-weight: 600;
 }
 
@@ -757,7 +757,7 @@ article.service-card {
 .service-card ul {
   padding-left: 20px;
   margin: 14px 0 0;
-  color: #475569;
+  color: #c3cedd;
 }
 
 .card-top {
@@ -771,12 +771,13 @@ article.service-card {
 .tag {
   padding: 6px 10px;
   border-radius: 10px;
-  background: rgba(31, 111, 235, 0.12);
-  color: var(--accent);
+  background: rgba(31, 111, 235, 0.16);
+  color: #e8f1ff;
+  border: 1px solid var(--muted-border);
 }
 
 .price {
-  color: var(--muted);
+  color: #c3cedd;
 }
 
 /* CTA + contact form */
@@ -785,11 +786,11 @@ article.service-card {
 }
 
 .cta-box {
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--muted-border);
   border-radius: 20px;
   padding: 24px;
-  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.1);
+  box-shadow: var(--shadow);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
@@ -799,22 +800,23 @@ article.service-card {
   display: grid;
   gap: 6px;
   font-weight: 600;
-  color: var(--ink);
+  color: #e8edf7;
 }
 
 .cta-form input,
 .cta-form textarea {
   padding: 12px 14px;
   border-radius: 12px;
-  border: 1px solid var(--border);
-  background: #f8fafc;
+  border: 1px solid var(--muted-border);
+  background: rgba(255, 255, 255, 0.03);
   font-family: inherit;
   font-size: 15px;
+  color: #f7fbff;
 }
 
 .contact-info {
-  background: rgba(31, 111, 235, 0.05);
-  border: 1px dashed rgba(31, 111, 235, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed var(--muted-border);
   border-radius: 14px;
   padding: 14px;
 }
@@ -828,24 +830,27 @@ article.service-card {
 .socials a {
   padding: 8px 12px;
   border-radius: 10px;
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--muted-border);
   font-weight: 600;
+  color: #e8edf7;
 }
 
 /* FAQ + blog */
 .faq-list details {
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--muted-border);
   border-radius: 14px;
   padding: 12px 14px;
   margin-bottom: 10px;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  box-shadow: var(--shadow);
+  color: #e8edf7;
 }
 
 .faq-list summary {
   cursor: pointer;
   font-weight: 700;
+  color: #f7fbff;
 }
 
 .blog-grid,
@@ -862,17 +867,18 @@ article.service-card {
 .step,
 .member,
 .member .avatar {
-  background: #fff;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--muted-border);
   border-radius: 14px;
   padding: 14px;
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow);
 }
 
 .tile h3,
 .folio-card h3,
 .about-card h3 {
   margin-top: 0;
+  color: #f7fbff;
 }
 
 .metrics,
@@ -886,8 +892,9 @@ article.service-card {
 .badge {
   padding: 6px 10px;
   border-radius: 10px;
-  background: rgba(31, 111, 235, 0.08);
-  color: var(--accent);
+  background: rgba(31, 111, 235, 0.16);
+  color: #e8f1ff;
+  border: 1px solid var(--muted-border);
   font-weight: 700;
 }
 
@@ -919,7 +926,8 @@ article.service-card {
   display: grid;
   place-items: center;
   font-weight: 800;
-  color: var(--accent);
+  color: #f7fbff;
+  background: rgba(31, 111, 235, 0.18);
 }
 .pill.primary {
   background: linear-gradient(120deg, var(--accent), var(--accent-2));
