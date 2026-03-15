@@ -35,4 +35,16 @@ tiltables.forEach(card => {
   card.addEventListener('mouseleave', () => {
     card.style.transform = '';
   });
+
+  // Make every card behave like a link to services
+  card.setAttribute('role', 'link');
+  card.setAttribute('tabindex', '0');
+  const goServices = () => (window.location.href = 'services.html');
+  card.addEventListener('click', goServices);
+  card.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      goServices();
+    }
+  });
 });

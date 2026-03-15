@@ -585,6 +585,17 @@ h3 {
 
 .tilt-card {
   transition: transform 180ms ease, box-shadow 180ms ease;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilt-card:hover {
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.55);
+}
+
+.tilt-card:active {
+  transform: translateY(0) scale(0.995);
 }
 
 .footer {
