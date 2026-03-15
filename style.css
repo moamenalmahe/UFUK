@@ -870,6 +870,61 @@ article.service-card {
   gap: 16px;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.gallery-card {
+  background: var(--frost-04);
+  border: 1px solid var(--muted-border);
+  border-radius: 16px;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-thumb {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(120deg, rgba(31, 111, 235, 0.24), rgba(249, 115, 22, 0.18));
+}
+
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05);
+}
+
+.gallery-card::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 14px;
+  border: 1px solid var(--muted-border);
+  pointer-events: none;
+}
+
+.gallery-meta {
+  display: grid;
+  gap: 6px;
+  padding: 4px;
+  color: #dfe7f5;
+}
+
+.gallery-meta p {
+  margin: 0;
+  color: #b6c3d8;
+  font-size: 14px;
+}
+
 .tile,
 .folio-card,
 .quote-card,
