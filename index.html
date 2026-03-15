@@ -10,6 +10,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://ufuk.it.com/">
+  <script>
+    // If someone lands on /index.html, send them to the root so the URL stays clean.
+    (function() {
+      const path = window.location.pathname;
+      if (path.toLowerCase().endsWith('/index.html')) {
+        const cleanPath = path.replace(/index\.html$/i, '') || '/';
+        const target = cleanPath + window.location.search + window.location.hash;
+        window.location.replace(target);
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
