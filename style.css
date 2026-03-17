@@ -716,7 +716,13 @@ h3 {
     padding: 14px 16px;
   }
   .nav-links {
-    gap: 8px;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links a,
+  .nav .pill {
+    padding: 8px 10px;
   }
   .services-page {
     padding: 50px 16px 30px;
@@ -726,6 +732,29 @@ h3 {
   }
   .services-grid {
     grid-template-columns: 1fr;
+  }
+  .capsule-grid,
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+  .capsule,
+  .case-card,
+  .tilt-card {
+    min-width: 0;
+    width: 100%;
+  }
+  .hero-actions,
+  .cta-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .hero-metrics {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+  .folio-card,
+  .quote-card,
+  .blog-grid {
+    width: 100%;
   }
 }
 .reveal {
