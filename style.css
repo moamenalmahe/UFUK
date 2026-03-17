@@ -737,19 +737,31 @@ h3 {
   .case-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
+  .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    justify-items: stretch;
+  }
+  .hero-metrics {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .hero-visual__cta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+  }
   .capsule,
   .case-card,
   .tilt-card {
     min-width: 0;
     width: 100%;
   }
-  .hero-actions,
   .cta-actions {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 10px;
-  }
-  .hero-metrics {
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
   .folio-card,
   .quote-card,
