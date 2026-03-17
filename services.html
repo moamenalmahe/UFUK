@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -25,23 +25,24 @@
         </div>
       </div>
       <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="pill">Contact Us</a>
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="pill" data-i18n="nav.contact">Contact Us</a>
+
       </nav>
     </header>
 
     <main>
       <section class="hero slim-hero">
         <div class="hero-copy">
-          <p class="eyebrow">Services</p>
-          <h1><img class="inline-logo" src="logo.jpeg" alt="UFUK icon"> Full-stack growth across media, product, and content.</h1>
-          <p class="lede">Choose a plan or mix-and-match. Every engagement includes analytics, QA, and motion polish.</p>
+          <p class="eyebrow" data-i18n="svc.hero.label">Services</p>
+          <h1><img class="inline-logo" src="logo.jpeg" alt="UFUK icon"> <span data-i18n="svc.hero.title">Growth services for ads, websites, and product features.</span></h1>
+          <p class="lede" data-i18n="svc.hero.lede">Pick a plan or combine a few. We always include analytics, quality checks, and smooth visuals.</p>
           <div class="hero-actions">
-            <a class="pill primary" href="contact.html">Start a project</a>
-            <a class="pill ghost" href="portfolio.html">See case studies</a>
+            <a class="pill primary" href="contact.html" data-i18n="svc.hero.cta1">Start a project</a>
+            <a class="pill ghost" href="portfolio.html" data-i18n="svc.hero.cta2">See case studies</a>
           </div>
         </div>
       </section>
@@ -58,15 +59,15 @@
 
       <section class="section grid-section">
         <div class="section-header">
-          <p class="eyebrow">Capabilities</p>
-          <h2>What we deliver</h2>
-          <p class="lede">A full-stack growth team under one roof. Each service is packaged with clear outcomes and optional starter pricing.</p>
+          <p class="eyebrow" data-i18n="svc.caps.label">Capabilities</p>
+          <h2 data-i18n="svc.caps.title">What you get</h2>
+          <p class="lede" data-i18n="svc.caps.copy">One team that runs strategy, creative, and build. Each service comes with a simple promise and starting scope.</p>
         </div>
         <div class="services-grid">
           <article class="service-card">
             <div class="card-top">
               <span class="tag">Paid Ads</span>
-              <span class="price">from $1.2k/mo</span>
+              
             </div>
             <h3>Google & Facebook Ads</h3>
             <p>Full-funnel campaigns with rapid A/B tests, conversion tracking, and weekly optimization.</p>
@@ -79,10 +80,10 @@
           <article class="service-card">
             <div class="card-top">
               <span class="tag">SEO</span>
-              <span class="price">from $900/mo</span>
+              
             </div>
             <h3>Search Engine Optimization</h3>
-            <p>Technical and content SEO to win rankings and keep them—built on clean architecture and fast pages.</p>
+            <p>Technical and content SEO to win rankings and keep themâ€”built on clean architecture and fast pages.</p>
             <ul>
               <li>Site speed, Core Web Vitals, schema</li>
               <li>Content sprints aligned to search intent</li>
@@ -92,7 +93,7 @@
           <article class="service-card">
             <div class="card-top">
               <span class="tag">Social</span>
-              <span class="price">from $750/mo</span>
+              
             </div>
             <h3>Social Media Management</h3>
             <p>Channel playbooks, content calendars, and thumb-stopping motion assets to grow community and reach.</p>
@@ -105,7 +106,7 @@
           <article class="service-card">
             <div class="card-top">
               <span class="tag">Design</span>
-              <span class="price">project-based</span>
+              
             </div>
             <h3>Website & Brand Design</h3>
             <p>Bold visual identity, UX, and motion that make your brand instantly recognizable.</p>
@@ -118,7 +119,7 @@
           <article class="service-card">
             <div class="card-top">
               <span class="tag">Content</span>
-              <span class="price">from $600/mo</span>
+              
             </div>
             <h3>Content Creation</h3>
             <p>Copy, images, and video engineered for engagement and search, aligned to your funnel.</p>
@@ -126,6 +127,76 @@
               <li>Blogs, ads, social, and product copy</li>
               <li>Short-form video and motion graphics</li>
               <li>Editorial calendars with keyword maps</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services-wall">
+        <div class="section-header">
+          <p class="eyebrow">Deep dives</p>
+          <h2>More detail on the four flagship tracks.</h2>
+          <p class="lede">These are the same pillars you see on the home page. Below is what you actually get week to week.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" id="performance-marketing">
+            <div class="card-top">
+              <span class="tag">Acquisition</span>
+              
+            </div>
+            <h3>Performance Marketing</h3>
+            <p>We run paid social and search as one operating system. Creative, landing pages, and budget allocation ship together so every test has a measurable outcome.</p>
+            <ul>
+              <li>Full-funnel setup across Meta, Google, and LinkedIn with consistent naming, tracking, and UTM discipline.</li>
+              <li>Creative lab: 3-5 new concepts and 8-12 iterations every two weeks, mapped to clear hypotheses.</li>
+              <li>Landing experiments: A/B and multivariate pages built on a CRO checklist (speed, clarity, proof, CTA friction).</li>
+              <li>ROAS and CAC cockpit: live Looker/GA dashboards with alerting for spend caps, CPA drift, and lead quality.</li>
+              <li>Weekly growth review: decisions on bid strategy, audience pruning, and cross-channel lift with action owners.</li>
+            </ul>
+          </article>
+          <article class="service-card" id="conversion-web-design">
+            <div class="card-top">
+              <span class="tag">Experience</span>
+              
+            </div>
+            <h3>Conversion Web Design</h3>
+            <p>We design and ship high-speed sites that pair story with proof. UX, copy, and motion are produced together, then hardened with QA and analytics.</p>
+            <ul>
+              <li>Discovery sprints to define jobs-to-be-done, user stories, and the primary conversion path.</li>
+              <li>Component library with responsive states, hover/motion specs, and accessibility baked in.</li>
+              <li>SEO-ready structure: semantic HTML, schema, lighthouse-first performance budgets, and log-based crawl checks.</li>
+              <li>Proof layer: testimonials, stats, social proof, and objection handling mapped to each page section.</li>
+              <li>Launch playbook: redirects, tracking plan, tag management, and rollback steps to keep campaigns safe.</li>
+            </ul>
+          </article>
+          <article class="service-card" id="engineering-pods">
+            <div class="card-top">
+              <span class="tag">Product</span>
+              
+            </div>
+            <h3>Engineering Pods</h3>
+            <p>Cross-functional squads that ship web and mobile features with measurable release cycles. We align on a single metric, then execute in two-week increments.</p>
+            <ul>
+              <li>Pod makeup: product owner, tech lead, designer, and 2-3 engineers with QA baked into the sprint.</li>
+              <li>Stack: React/Next for web, Swift/Kotlin/React Native for mobile, CI/CD with automated testing and previews.</li>
+              <li>Observability: logging, tracing, uptime, and feature flags to de-risk releases and enable fast rollbacks.</li>
+              <li>Security and resilience: auth, RBAC, rate limiting, backups, and GDPR-ready data handling as defaults.</li>
+              <li>Outcome cadence: sprint reviews with shipped demo links, metric movement, and next experiments.</li>
+            </ul>
+          </article>
+          <article class="service-card" id="identity-creative">
+            <div class="card-top">
+              <span class="tag">Brand</span>
+              
+            </div>
+            <h3>Identity & Creative</h3>
+            <p>We build magnetic visual systems and campaigns that stay consistent across ads, product, and content. Strategy, voice, and motion live in one kit.</p>
+            <ul>
+              <li>Brand platform: positioning, voice/tone, narrative arcs, and a messaging lattice you can hand to any team.</li>
+              <li>Identity system: logo refinements, typography, color science, grids, and UI tokens ready for Figma/dev handoff.</li>
+              <li>Motion language: micro-interactions, transitions, and social motion templates that match the brand system.</li>
+              <li>Campaign kits: ad sets, landing sections, email/social variants, and export presets for fast shipping.</li>
+              <li>Governance: usage guidelines, do/don't boards, and a lightweight review workflow to keep teams on-brand.</li>
             </ul>
           </article>
         </div>
@@ -171,7 +242,7 @@
       <section class="section cta">
         <div class="cta-box">
           <div>
-            <p class="eyebrow">Let’s make something fearless</p>
+            <p class="eyebrow">Letâ€™s make something fearless</p>
             <h2>Ready to move?</h2>
             <p class="lede">Tell us your boldest goal. We'll bring the motion, the craft, and the code.</p>
           </div>
@@ -192,13 +263,13 @@
           </form>
           <div class="contact-info">
             <h3>Contact</h3>
-            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-            <p><strong>Email:</strong> hello@ufuk.studio</p>
-            <div class="socials">
-              <a href="#">LinkedIn</a>
-              <a href="#">Instagram</a>
-              <a href="#">YouTube</a>
-              <a href="#">WhatsApp</a>
+            <p><strong>Phone:</strong> 01037814320</p>
+            <p><strong>Email:</strong> <a href="mailto:ufuk.it.com@ufuk.it.com">ufuk.it.com@ufuk.it.com</a></p>
+            <div class='socials'>
+              <a class='social-link' href='https://www.linkedin.com' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 24 24' width='18' height='18' fill='currentColor'><path d='M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.08 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.04h4.52V23H.24V8.04ZM8.45 8.04h4.33v2.04h.06c.6-1.14 2.07-2.35 4.27-2.35 4.57 0 5.41 3.01 5.41 6.93V23h-4.5v-6.18c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.37 1.6-2.37 3.25V23h-4.5V8.04Z'/></svg><span class='social-label'>LinkedIn</span></a>
+              <a class='social-link' href='https://www.instagram.com' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 24 24' width='18' height='18' fill='currentColor'><path d='M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.25-4.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z'/></svg><span class='social-label'>Instagram</span></a>
+              <a class='social-link highlight' href='https://wa.me/01037814320' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 32 32' width='18' height='18' fill='currentColor'><path d='M16.04 6.04A9.9 9.9 0 0 0 6 15.96c0 1.75.45 3.46 1.31 4.98l-1.39 5.09 5.22-1.37a9.9 9.9 0 0 0 4.9 1.27h.01A9.96 9.96 0 0 0 26 15.97a9.9 9.9 0 0 0-9.96-9.93Zm0 2.05c4.37 0 7.92 3.53 7.92 7.89a7.9 7.9 0 0 1-7.92 7.85 7.9 7.9 0 0 1-4.02-1.09l-.29-.17-3.1.82.83-3.02-.19-.31A7.86 7.86 0 0 1 8.1 16c0-4.36 3.57-7.9 7.94-7.9Zm-3.2 3.54c-.18-.4-.38-.41-.55-.42l-.47-.01c-.16 0-.42.06-.64.31-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.65 2.63 4.07 3.58 2 .79 2.41.64 2.85.6.44-.04 1.4-.57 1.6-1.12.2-.55.2-1.01.14-1.11-.06-.1-.22-.16-.47-.28-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.24-.65.8-.8.97-.15.17-.3.18-.55.06-.25-.12-1.03-.38-1.96-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.01-.37.1-.5.1-.1.25-.27.38-.4.12-.13.17-.22.25-.37.08-.16.04-.3-.02-.42-.06-.12-.54-1.29-.74-1.76Z'/></svg><span class='social-label'>WhatsApp</span></a>
+              <a class='social-link' href='https://www.facebook.com' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 24 24' width='18' height='18' fill='currentColor'><path d='M22 12.07C22 6.58 17.52 2.1 12.03 2.1S2.06 6.58 2.06 12.07c0 4.96 3.63 9.06 8.38 9.86v-6.98H7.9v-2.88h2.54V9.86c0-2.5 1.5-3.87 3.78-3.87 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.76l-.44 2.88h-2.32v6.98c4.75-.8 8.38-4.9 8.38-9.86Z'/></svg><span class='social-label'>Facebook</span></a>
             </div>
           </div>
         </div>
@@ -226,3 +297,12 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+

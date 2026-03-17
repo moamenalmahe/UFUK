@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="canonical" href="https://ufuk.it.com/">
   <script>
-    // If someone lands on /index.html, send them to the root so the URL stays clean.
     (function() {
       const path = window.location.pathname;
       if (path.toLowerCase().endsWith('/index.html')) {
@@ -38,11 +37,12 @@
         </div>
       </div>
       <nav class="nav-links">
-        <a href="/">Home</a>
-        <a href="services.html">Services</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About</a>
-        <a href="contact.html" class="pill">Contact Us</a>
+        <a href="/" data-i18n="nav.home">Home</a>
+        <a href="services.html" data-i18n="nav.services">Services</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="about.html" data-i18n="nav.about">About</a>
+        <a href="contact.html" class="pill" data-i18n="nav.contact">Contact Us</a>
+
       </nav>
     </header>
 
@@ -50,47 +50,47 @@
       <section class="hero hero--immersive">
         <div class="hero-copy">
           <div class="hero-badges">
-            <span class="pill pill-soft">Full-funnel digital growth</span>
-            <span class="pill pill-soft">Built in Cairo • Serving global brands</span>
+            <span class="pill pill-soft" data-i18n="hero.badge1">Digital growth, end to end</span>
+            <span class="pill pill-soft" data-i18n="hero.badge2">Based in Cairo, working everywhere</span>
           </div>
-          <h1>We design, launch, and scale digital experiences that win market share.</h1>
-          <p class="lede">UFUK is the digital growth studio that blends performance marketing, brand design, and product engineering into one accountable team. Every sprint is tied to a metric that moves.</p>
+          <h1 data-i18n="hero.title">We build and improve digital products that help you win customers.</h1>
+          <p class="lede" data-i18n="hero.lede">UFUK is a small team that runs marketing, design, and engineering together. Each two-week sprint has one clear goal and one owner.</p>
           <div class="hero-actions">
-            <a href="services.html" class="pill primary">See what we do</a>
-            <a href="portfolio.html" class="pill ghost">View recent work</a>
-            <a href="contact.html" class="link-inline">Book a 20‑minute audit →</a>
+            <a href="services.html" class="pill primary" data-i18n="hero.cta1">See what we do</a>
+            <a href="portfolio.html" class="pill ghost" data-i18n="hero.cta2">View recent work</a>
+            <a href="contact.html" class="link-inline" data-i18n="hero.cta3">Book a 20-minute audit &rarr;</a>
           </div>
           <div class="hero-metrics">
             <div class="metric-card tilt-card">
-              <p class="eyebrow">Acquisition</p>
+              <p class="eyebrow" data-i18n="hero.metric1.label">Acquisition</p>
               <h3>+142%</h3>
-              <p>avg. growth in qualified leads after 90 days.</p>
+              <p data-i18n="hero.metric1.copy">average lift in good leads after 90 days.</p>
             </div>
             <div class="metric-card tilt-card">
-              <p class="eyebrow">Efficiency</p>
+              <p class="eyebrow" data-i18n="hero.metric2.label">Efficiency</p>
               <h3>-38%</h3>
-              <p>drop in CPA with data-driven creative and landing tests.</p>
+              <p data-i18n="hero.metric2.copy">drop in CPA with data-driven creative and landing tests.</p>
             </div>
             <div class="metric-card tilt-card">
-              <p class="eyebrow">Velocity</p>
+              <p class="eyebrow" data-i18n="hero.metric3.label">Velocity</p>
               <h3>3 weeks</h3>
-              <p>from kickoff to launch of a conversion-ready experience.</p>
+              <p data-i18n="hero.metric3.copy">from kickoff to launch of a conversion-ready experience.</p>
             </div>
           </div>
         </div>
         <div class="hero-visual tilt-card">
           <div class="hero-visual__glow"></div>
           <div class="hero-visual__inner">
-            <p class="eyebrow">Playbook</p>
-            <h3>Acquisition system we install</h3>
+            <p class="eyebrow" data-i18n="playbook.label">Playbook</p>
+            <h3 data-i18n="playbook.title">How we grow for you</h3>
             <ul class="hero-checklist">
-              <li><span>Real-time analytics cockpit</span><small>Spend, ROAS, and lead quality in one view.</small></li>
-              <li><span>Message-market fit sprints</span><small>Rapid creative and landing A/B cycles.</small></li>
-              <li><span>Full-stack delivery</span><small>Media + UX + engineering under one squad.</small></li>
+              <li><span data-i18n="playbook.item1.title">Real-time analytics cockpit</span><small data-i18n="playbook.item1.copy">Spend, ROAS, and lead quality in one view.</small></li>
+              <li><span data-i18n="playbook.item2.title">Message-market fit sprints</span><small data-i18n="playbook.item2.copy">Rapid creative and landing A/B cycles.</small></li>
+              <li><span data-i18n="playbook.item3.title">Full-stack delivery</span><small data-i18n="playbook.item3.copy">Media + UX + engineering under one squad.</small></li>
             </ul>
             <div class="hero-visual__cta">
-              <span class="pill primary">Schedule a build week</span>
-              <span class="pill ghost">Download starter kit</span>
+              <span class="pill primary" data-i18n="playbook.cta1">Schedule a build week</span>
+              <span class="pill ghost" data-i18n="playbook.cta2">Download starter kit</span>
             </div>
           </div>
         </div>
@@ -108,61 +108,61 @@
 
       <section class="section wave">
         <div class="section-header">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Everything you need to grow, shipped as one integrated stack.</h2>
-          <p class="lede">No silos. No handoffs. Strategy, creative, engineering, and optimization run together.</p>
+          <p class="eyebrow" data-i18n="caps.title">Capabilities</p>
+          <h2 data-i18n="caps.headline">One team for strategy, creative, and code.</h2>
+          <p class="lede" data-i18n="caps.copy">We plan, design, build, and test without handoffs. You get clear owners and faster launches.</p>
         </div>
         <div class="capsule-grid">
           <article class="capsule tilt-card">
             <div class="capsule-top">
-              <span class="tag">Acquisition</span>
+              <span class="tag" data-i18n="caps.card1.tag">Acquisition</span>
               <span class="dot"></span>
             </div>
-            <h3>Performance Marketing</h3>
-            <p>Paid social, search, and retargeting tuned weekly to your ROI targets.</p>
+            <h3 data-i18n="caps.card1.title">Performance Marketing</h3>
+            <p data-i18n="caps.card1.copy">Paid social, search, and retargeting tuned weekly to your ROI targets.</p>
             <div class="chip-row">
-              <span class="chip">Meta + Google</span>
-              <span class="chip">B2B + DTC</span>
-              <span class="chip">ROAS dashboards</span>
+              <span class="chip" data-i18n="caps.card1.chip1">Meta + Google</span>
+              <span class="chip" data-i18n="caps.card1.chip2">B2B + DTC</span>
+              <span class="chip" data-i18n="caps.card1.chip3">ROAS dashboards</span>
             </div>
           </article>
           <article class="capsule tilt-card">
             <div class="capsule-top">
-              <span class="tag">Experience</span>
+              <span class="tag" data-i18n="caps.card2.tag">Experience</span>
               <span class="dot"></span>
             </div>
-            <h3>Conversion Web Design</h3>
-            <p>High-speed, responsive sites with storytelling, proof, and conversion science built in.</p>
+            <h3 data-i18n="caps.card2.title">Conversion Web Design</h3>
+            <p data-i18n="caps.card2.copy">High-speed, responsive sites with storytelling, proof, and conversion science built in.</p>
             <div class="chip-row">
-              <span class="chip">UX research</span>
-              <span class="chip">SEO-ready</span>
-              <span class="chip">Landing labs</span>
+              <span class="chip" data-i18n="caps.card2.chip1">UX research</span>
+              <span class="chip" data-i18n="caps.card2.chip2">SEO-ready</span>
+              <span class="chip" data-i18n="caps.card2.chip3">Landing labs</span>
             </div>
           </article>
           <article class="capsule tilt-card">
             <div class="capsule-top">
-              <span class="tag">Product</span>
+              <span class="tag" data-i18n="caps.card3.tag">Product</span>
               <span class="dot"></span>
             </div>
-            <h3>Engineering Pods</h3>
-            <p>Full-stack teams shipping web apps and mobile features on agile, measurable cycles.</p>
+            <h3 data-i18n="caps.card3.title">Engineering Pods</h3>
+            <p data-i18n="caps.card3.copy">Full-stack teams shipping web apps and mobile features on agile, measurable cycles.</p>
             <div class="chip-row">
-              <span class="chip">React / Next</span>
-              <span class="chip">iOS + Android</span>
-              <span class="chip">CI/CD</span>
+              <span class="chip" data-i18n="caps.card3.chip1">React / Next</span>
+              <span class="chip" data-i18n="caps.card3.chip2">iOS + Android</span>
+              <span class="chip" data-i18n="caps.card3.chip3">CI/CD</span>
             </div>
           </article>
           <article class="capsule tilt-card">
             <div class="capsule-top">
-              <span class="tag">Brand</span>
+              <span class="tag" data-i18n="caps.card4.tag">Brand</span>
               <span class="dot"></span>
             </div>
-            <h3>Identity & Creative</h3>
-            <p>Magnetic visual systems, story-led campaigns, and on-brand content for every channel.</p>
+            <h3 data-i18n="caps.card4.title">Identity &amp; Creative</h3>
+            <p data-i18n="caps.card4.copy">Magnetic visual systems, story-led campaigns, and on-brand content for every channel.</p>
             <div class="chip-row">
-              <span class="chip">Naming</span>
-              <span class="chip">Art direction</span>
-              <span class="chip">Motion</span>
+              <span class="chip" data-i18n="caps.card4.chip1">Naming</span>
+              <span class="chip" data-i18n="caps.card4.chip2">Art direction</span>
+              <span class="chip" data-i18n="caps.card4.chip3">Motion</span>
             </div>
           </article>
         </div>
@@ -170,8 +170,8 @@
 
       <section class="section">
         <div class="section-header">
-          <p class="eyebrow">Proof</p>
-          <h2>Recent wins from the UFUK studio.</h2>
+          <p class="eyebrow" data-i18n="proof.title">Proof</p>
+          <h2 data-i18n="proof.headline">Recent results clients can check.</h2>
         </div>
         <div class="case-grid">
           <article class="case-card tilt-card">
@@ -179,53 +179,53 @@
               <span class="tag">Fintech</span>
               <span class="stat-bubble">+212% signups</span>
             </div>
-            <h3>Rebuilt onboarding for a payments startup</h3>
-            <p>Crafted a new funnel, refreshed messaging, and optimized paid search—cut CAC by 36% in six weeks.</p>
+            <h3 data-i18n="proof.case1.title">Rebuilt onboarding for a payments startup</h3>
+            <p data-i18n="proof.case1.copy">Crafted a new funnel, refreshed messaging, and optimized paid search—cut CAC by 36% in six weeks.</p>
           </article>
           <article class="case-card tilt-card">
             <div class="case-top">
-              <span class="tag">E‑commerce</span>
+              <span class="tag">E?commerce</span>
               <span class="stat-bubble">3.4x ROAS</span>
             </div>
-            <h3>Always-on creative lab for a DTC retailer</h3>
-            <p>Weekly creative sprints, dynamic product pages, and geo-based ads delivered durable growth.</p>
+            <h3 data-i18n="proof.case2.title">Always-on creative lab for a DTC retailer</h3>
+            <p data-i18n="proof.case2.copy">Weekly creative sprints, dynamic product pages, and geo-based ads delivered durable growth.</p>
           </article>
           <article class="case-card tilt-card">
             <div class="case-top">
               <span class="tag">B2B SaaS</span>
               <span class="stat-bubble">-41% CPA</span>
             </div>
-            <h3>Pipeline engine for a productivity platform</h3>
-            <p>Developed webinar funnels, outbound landing kits, and a metrics cockpit for the sales team.</p>
+            <h3 data-i18n="proof.case3.title">Pipeline engine for a productivity platform</h3>
+            <p data-i18n="proof.case3.copy">Developed webinar funnels, outbound landing kits, and a metrics cockpit for the sales team.</p>
           </article>
         </div>
       </section>
 
       <section class="section process">
         <div class="section-header">
-          <p class="eyebrow">How we work</p>
-          <h2>A sprint-led model with measurable outcomes every week.</h2>
+          <p class="eyebrow" data-i18n="process.title">How we work</p>
+          <h2 data-i18n="process.headline">Weekly sprints with a single number to beat.</h2>
         </div>
         <div class="process-rail">
           <div class="process-step tilt-card">
             <span class="step-number">01</span>
             <div>
-              <h3>Audit & align</h3>
-              <p>We map your growth levers, set a single metric, and build a 90-day plan.</p>
+              <h3 data-i18n="process.step1.title">Audit &amp; align</h3>
+              <p data-i18n="process.step1.copy">We map your growth levers, set a single metric, and build a 90-day plan.</p>
             </div>
           </div>
           <div class="process-step tilt-card">
             <span class="step-number">02</span>
             <div>
-              <h3>Build & launch</h3>
-              <p>Creative, landing pages, and media go live together with QA, tracking, and alerts.</p>
+              <h3 data-i18n="process.step2.title">Build &amp; launch</h3>
+              <p data-i18n="process.step2.copy">Creative, landing pages, and media go live together with QA, tracking, and alerts.</p>
             </div>
           </div>
           <div class="process-step tilt-card">
             <span class="step-number">03</span>
             <div>
-              <h3>Optimize relentlessly</h3>
-              <p>Weekly experiments, CRO wins, and reporting you can open and act on instantly.</p>
+              <h3 data-i18n="process.step3.title">Optimize relentlessly</h3>
+              <p data-i18n="process.step3.copy">Weekly experiments, CRO wins, and reporting you can open and act on instantly.</p>
             </div>
           </div>
         </div>
@@ -233,13 +233,13 @@
 
       <section class="section cta-banner tilt-card">
         <div>
-          <p class="eyebrow">Ready when you are</p>
-          <h2>Let’s build the next growth leap together.</h2>
-          <p class="lede">Tell us your number—revenue, ROAS, signups—and we’ll design the sprint to hit it.</p>
+          <p class="eyebrow" data-i18n="cta.title">Ready when you are</p>
+          <h2 data-i18n="cta.headline">Ready to start? Tell us the goal.</h2>
+          <p class="lede" data-i18n="cta.copy">Share the metric that matters—more sales, cheaper leads, faster product—and we will plan the first sprint to move it.</p>
         </div>
         <div class="cta-actions">
-          <a href="contact.html" class="pill primary">Start a project</a>
-          <a href="services.html" class="pill ghost">View service menu</a>
+          <a href="contact.html" class="pill primary" data-i18n="cta.cta1">Start a project</a>
+          <a href="services.html" class="pill ghost" data-i18n="cta.cta2">View service menu</a>
         </div>
       </section>
     </main>
@@ -247,15 +247,14 @@
     <footer class="footer">
       <div class="footer-inner">
         <div>
-          <p class="eyebrow">Stay connected</p>
-          <h3>Follow UFUK</h3>
+          <p class="eyebrow" data-i18n="footer.title">Stay connected</p>
+          <h3 data-i18n="footer.headline">Follow UFUK</h3>
         </div>
-        <div class="social-links">
-          <a class="social-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
-          <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a>
-          <a class="social-link" href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a>
-          <a class="social-link highlight" href="https://wa.me/15551234567" target="_blank" rel="noreferrer">WhatsApp</a>
+        <div class='social-links'>
+          <a class='social-link' href='https://www.linkedin.com' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 24 24' width='18' height='18' fill='currentColor'><path d='M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.08 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.04h4.52V23H.24V8.04ZM8.45 8.04h4.33v2.04h.06c.6-1.14 2.07-2.35 4.27-2.35 4.57 0 5.41 3.01 5.41 6.93V23h-4.5v-6.18c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.37 1.6-2.37 3.25V23h-4.5V8.04Z'/></svg><span class='social-label'>LinkedIn</span></a>
+          <a class='social-link' href='https://www.instagram.com' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 24 24' width='18' height='18' fill='currentColor'><path d='M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5.25-4.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z'/></svg><span class='social-label'>Instagram</span></a>
+          <a class='social-link highlight' href='https://wa.me/01037814320' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 32 32' width='18' height='18' fill='currentColor'><path d='M16.04 6.04A9.9 9.9 0 0 0 6 15.96c0 1.75.45 3.46 1.31 4.98l-1.39 5.09 5.22-1.37a9.9 9.9 0 0 0 4.9 1.27h.01A9.96 9.96 0 0 0 26 15.97a9.9 9.9 0 0 0-9.96-9.93Zm0 2.05c4.37 0 7.92 3.53 7.92 7.89a7.9 7.9 0 0 1-7.92 7.85 7.9 7.9 0 0 1-4.02-1.09l-.29-.17-3.1.82.83-3.02-.19-.31A7.86 7.86 0 0 1 8.1 16c0-4.36 3.57-7.9 7.94-7.9Zm-3.2 3.54c-.18-.4-.38-.41-.55-.42l-.47-.01c-.16 0-.42.06-.64.31-.22.24-.84.82-.84 2s.86 2.31.98 2.47c.12.16 1.65 2.63 4.07 3.58 2 .79 2.41.64 2.85.6.44-.04 1.4-.57 1.6-1.12.2-.55.2-1.01.14-1.11-.06-.1-.22-.16-.47-.28-.25-.12-1.47-.72-1.7-.8-.23-.08-.4-.12-.57.12-.17.24-.65.8-.8.97-.15.17-.3.18-.55.06-.25-.12-1.03-.38-1.96-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.01-.37.1-.5.1-.1.25-.27.38-.4.12-.13.17-.22.25-.37.08-.16.04-.3-.02-.42-.06-.12-.54-1.29-.74-1.76Z'/></svg><span class='social-label'>WhatsApp</span></a>
+          <a class='social-link' href='https://www.facebook.com' target='_blank' rel='noreferrer'><svg aria-hidden='true' viewBox='0 0 24 24' width='18' height='18' fill='currentColor'><path d='M22 12.07C22 6.58 17.52 2.1 12.03 2.1S2.06 6.58 2.06 12.07c0 4.96 3.63 9.06 8.38 9.86v-6.98H7.9v-2.88h2.54V9.86c0-2.5 1.5-3.87 3.78-3.87 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56v1.87h2.76l-.44 2.88h-2.32v6.98c4.75-.8 8.38-4.9 8.38-9.86Z'/></svg><span class='social-label'>Facebook</span></a>
         </div>
       </div>
     </footer>
@@ -263,3 +262,10 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+

@@ -35,16 +35,22 @@ tiltables.forEach(card => {
   card.addEventListener('mouseleave', () => {
     card.style.transform = '';
   });
+  // Interaction stays cosmetic only; no automatic navigation
+  card.setAttribute('role', 'presentation');
+});
 
-  // Make every card behave like a link to services
+// Make service-related cards navigate to the services page
+const serviceCards = document.querySelectorAll('.capsule.tilt-card, .case-card.tilt-card');
+serviceCards.forEach(card => {
   card.setAttribute('role', 'link');
   card.setAttribute('tabindex', '0');
-  const goServices = () => (window.location.href = 'services.html');
-  card.addEventListener('click', goServices);
+  card.style.cursor = 'pointer';
+  const goToServices = () => (window.location.href = 'services.html');
+  card.addEventListener('click', goToServices);
   card.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
-      goServices();
+      goToServices();
     }
   });
 });
