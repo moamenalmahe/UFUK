@@ -731,15 +731,15 @@ h3 {
     padding: 18px;
   }
   .services-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
   .capsule-grid,
   .case-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   }
   .hero-actions {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 12px;
     justify-items: stretch;
   }
@@ -749,7 +749,7 @@ h3 {
   }
   .hero-visual__cta {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
   }
   .capsule,
@@ -767,6 +767,35 @@ h3 {
   .quote-card,
   .blog-grid {
     width: 100%;
+  }
+}
+
+/* Floating WhatsApp CTA */
+.floating-cta {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #25d366, #1f6feb);
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+}
+.floating-cta svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+@media (min-width: 1000px) {
+  .floating-cta {
+    right: 24px;
+    bottom: 24px;
   }
 }
 .reveal {
